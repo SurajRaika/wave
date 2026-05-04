@@ -37,6 +37,11 @@ class User extends WaveUser
         return $this->hasMany(ActivityLog::class);
     }
 
+    public function contacts(): HasMany
+    {
+        return $this->hasMany(Contact::class);
+    }
+
     protected static function boot()
     {
         parent::boot();

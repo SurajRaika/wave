@@ -14,7 +14,7 @@ return [
     ],
     'background' => [
         'color' => '#ffffff',
-        'image' => '/storage/auth/background.jpg',
+        'image' => '/storage/auth/background.png',
         'image_overlay_color' => '#ffffff',
         'image_overlay_opacity' => '1',
     ],
@@ -26,7 +26,7 @@ return [
         'input_border' => '#232329',
     ],
     'alignment' => [
-        'heading' => 'center',
+        'heading' => 'left',
         'container' => 'center',
     ],
     'favicon' => [

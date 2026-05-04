@@ -49,6 +49,9 @@ class AppServiceProvider extends ServiceProvider
         // Register activity log event listeners
         Event::listen(Login::class, LogSuccessfulLogin::class);
         Event::listen(Logout::class, LogSuccessfulLogout::class);
+        Event::listen(\Illuminate\Auth\Events\Registered::class, function ($event) {
+            session(['onboarding' => true]);
+        });
 
         Validator::extend('base64image', function ($attribute, $value, $parameters, $validator) {
             $explode = explode(',', $value);

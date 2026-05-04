@@ -12,6 +12,19 @@
 */
 
 use Wave\Facades\Wave;
+use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 // Wave routes
 Wave::routes();
+
+// App (Inertia/React) routes
+Route::middleware(['auth', 'verified'])->prefix('app')->group(function () {
+    Route::get('/', function () {
+        return Inertia::render('Dashboard');
+    })->name('app.dashboard');
+
+    Route::get('/contacts', function () {
+        return Inertia::render('Contacts/Index');
+    })->name('app.contacts');
+});

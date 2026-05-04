@@ -2,6 +2,11 @@
     use function Laravel\Folio\{middleware, name};
 	middleware('auth');
     name('dashboard');
+
+    if (session()->pull('onboarding')) {
+        header('Location: /onboarding');
+        exit;
+    }
 ?>
 
 <x-layouts.app>

@@ -1,16 +1,45 @@
 {
   "resources/css/filament/admin/theme.css": {
-    "file": "assets/theme-DRT1wFy8.css",
+    "file": "assets/theme-CUERHbQF.css",
+    "name": "theme",
+    "names": [
+      "theme.css"
+    ],
     "src": "resources/css/filament/admin/theme.css",
     "isEntry": true
   },
+  "resources/js/Pages/Dashboard.jsx": {
+    "file": "assets/Dashboard-CnaQZXGh.js",
+    "name": "Dashboard",
+    "src": "resources/js/Pages/Dashboard.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-CJhzrOq1.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/Dashboard.jsx"
+    ],
+    "css": [
+      "assets/app-CAxVNM1A.css"
+    ]
+  },
   "resources/themes/anchor/assets/css/app.css": {
-    "file": "assets/app-75U0MKBP.css",
+    "file": "assets/app-CAxVNM1A.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
     "src": "resources/themes/anchor/assets/css/app.css",
     "isEntry": true
   },
   "resources/themes/anchor/assets/js/app.js": {
-    "file": "assets/app-CaUPGaqM.js",
+    "file": "assets/app-CUsMfZCN.js",
     "name": "app",
     "src": "resources/themes/anchor/assets/js/app.js",
     "isEntry": true
