@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Api\ScannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return auth()->user();
+Route::middleware('auth:api')->group(function() {
+    Route::get('/user', function (Request $request) {
+        return auth()->user();
+    });
+
+    Route::post('/scanner', [ScannerController::class, 'scan'])->name('api.scanner');
 });
 
 Wave::api();

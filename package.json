@@ -16,7 +16,8 @@
     "postcss": "^8.4.38",
     "postcss-nesting": "^12.1.1",
     "tailwindcss": "^4.1.12",
-    "vite": "^8.0.10"
+    "vite": "^8.0.10",
+    "vite-plugin-pwa": "^1.2.0"
   },
   "dependencies": {
     "@inertiajs/react": "^3.0.3",

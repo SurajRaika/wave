@@ -1,0 +1,1 @@
+{"name":"AfterMeet","short_name":"AfterMeet","description":"Capture and manage contacts instantly after meeting.","start_url":"/app","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","lang":"en","scope":"/build/","icons":[{"src":"/wave/favicon.png","sizes":"192x192","type":"image/png"},{"src":"/wave/favicon.png","sizes":"512x512","type":"image/png"}]}
