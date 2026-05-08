@@ -28,7 +28,9 @@ export default defineConfig({
         }),
         VitePWA({
             registerType: 'autoUpdate',
-            injectRegister: 'auto',
+            scope: '/',
+            base: '/',
+            injectRegister: false,
             workbox: {
                 globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2}'],
                 navigateFallback: '/app',
@@ -70,16 +72,19 @@ export default defineConfig({
                 background_color: '#ffffff',
                 display: 'standalone',
                 start_url: '/app',
+                scope: '/',
                 icons: [
                     {
-                        src: '/wave/favicon.png',
+                        src: '/wave/img/logo.png',
                         sizes: '192x192',
-                        type: 'image/png'
+                        type: 'image/png',
+                        purpose: 'any'
                     },
                     {
-                        src: '/wave/favicon.png',
+                        src: '/wave/img/logo.png',
                         sizes: '512x512',
-                        type: 'image/png'
+                        type: 'image/png',
+                        purpose: 'maskable'
                     }
                 ]
             }

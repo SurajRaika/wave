@@ -1,10 +1,4 @@
 {
-  "node_modules/workbox-window/build/workbox-window.prod.es5.mjs": {
-    "file": "assets/workbox-window.prod.es5-BLxbIXbq.js",
-    "name": "workbox-window.prod.es5",
-    "src": "node_modules/workbox-window/build/workbox-window.prod.es5.mjs",
-    "isDynamicEntry": true
-  },
   "resources/css/filament/admin/theme.css": {
     "file": "assets/theme-CUERHbQF.css",
     "name": "theme",
@@ -15,7 +9,7 @@
     "isEntry": true
   },
   "resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-DI0zrxyW.js",
+    "file": "assets/Dashboard-BcolQTzs.js",
     "name": "Dashboard",
     "src": "resources/js/Pages/Dashboard.jsx",
     "isDynamicEntry": true,
@@ -24,20 +18,19 @@
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-BRhcOgS1.js",
+    "file": "assets/app-Dy1r6ThV.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "dynamicImports": [
-      "node_modules/workbox-window/build/workbox-window.prod.es5.mjs",
       "resources/js/Pages/Dashboard.jsx"
     ],
     "css": [
-      "assets/app-KQsP5OUv.css"
+      "assets/app-BYjlQXwG.css"
     ]
   },
   "resources/themes/anchor/assets/css/app.css": {
-    "file": "assets/app-KQsP5OUv.css",
+    "file": "assets/app-BYjlQXwG.css",
     "name": "app",
     "names": [
       "app.css"
@@ -46,7 +39,7 @@
     "isEntry": true
   },
   "resources/themes/anchor/assets/js/app.js": {
-    "file": "assets/app-CUsMfZCN.js",
+    "file": "assets/app-Dm8ZgYAC.js",
     "name": "app",
     "src": "resources/themes/anchor/assets/js/app.js",
     "isEntry": true

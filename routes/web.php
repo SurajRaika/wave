@@ -18,6 +18,14 @@ use Inertia\Inertia;
 // Wave routes
 Wave::routes();
 
+// PWA Service Worker route
+Route::get('/sw.js', function () {
+    return response()->file(public_path('build/sw.js'));
+});
+Route::get('/workbox-{hash}.js', function ($hash) {
+    return response()->file(public_path("build/workbox-{$hash}.js"));
+});
+
 // App (Inertia/React) routes
 Route::middleware(['auth', 'verified'])->prefix('app')->group(function () {
     Route::get('/', function () {

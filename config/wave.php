@@ -3,7 +3,7 @@
 return [
 
     'api' => [
-        'auth_token_expires' => 60,
+        'auth_token_expires' => 525600,
         'key_token_expires' => 1,
     ],
 

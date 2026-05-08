@@ -12,6 +12,8 @@
         @viteReactRefresh
         @vite(['resources/js/app.jsx'])
         @inertiaHead
+
+        <link rel="manifest" href="/build/manifest.webmanifest">
     </head>
     <body class="font-sans antialiased">
         @inertia
